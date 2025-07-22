@@ -1,0 +1,648 @@
+{
+  "projects": [
+    {
+      "key": "los-admin",
+      "name": "LOS Admin",
+      "assignee": "aaron.buthelo@idexcel.com",
+      "component": "Admin Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-admin-ui",
+      "name": "LOS Admin UI",
+      "assignee": "aaron.buthelo@idexcel.com",
+      "component": "Admin Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-admin-ui-widget",
+      "name": "LOS Admin UI Widget",
+      "assignee": "aaron.buthelo@idexcel.com",
+      "component": "Admin Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-app-services-infra-repo",
+      "name": "LOS App Services Infra Repo",
+      "assignee": "anoop.mc@idexcel.com",
+      "component": "Others",
+      "isChecked": true
+    },
+    {
+      "key": "los-approval",
+      "name": "LOS Approval",
+      "assignee": "harmanpreet.gill@idexcel.com",
+      "component": "Approval Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-approval-ui",
+      "name": "LOS Approval UI",
+      "assignee": "harmanpreet.gill@idexcel.com",
+      "component": "Approval Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-auditlogs",
+      "name": "LOS Auditlogs",
+      "assignee": "adarsh.n@idexcel.com",
+      "component": "Audit Logs",
+      "isChecked": true
+    },
+    {
+      "key": "los-auditlogs-ui",
+      "name": "LOS Auditlogs UI",
+      "assignee": "adarsh.n@idexcel.com",
+      "component": "Audit Logs",
+      "isChecked": true
+    },
+    {
+      "key": "los-auth",
+      "name": "LOS Auth",
+      "assignee": "harmanpreet.gill@idexcel.com",
+      "component": "Auth Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-auth-ui",
+      "name": "LOS Auth UI",
+      "assignee": "harmanpreet.gill@idexcel.com",
+      "component": "Auth Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-client-offboarding",
+      "name": "LOS Client Offboarding",
+      "assignee": "anoop.mc@idexcel.com",
+      "component": "Client Onboarding",
+      "isChecked": true
+    },
+    {
+      "key": "los-client-onboarding",
+      "name": "LOS Client Onboarding",
+      "assignee": "anoop.mc@idexcel.com",
+      "component": "Client Onboarding",
+      "isChecked": true
+    },
+    {
+      "key": "los-clientbilling",
+      "name": "LOS Clientbilling",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Client Onboarding",
+      "isChecked": true
+    },
+    {
+      "key": "los-codat",
+      "name": "LOS Codat",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Integrations",
+      "isChecked": true
+    },
+    {
+      "key": "los-cognitouserupdate",
+      "name": "LOS Cognitouserupdate",
+      "assignee": "harmanpreet.gill@idexcel.com",
+      "component": "Auth Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-collateral",
+      "name": "LOS Collateral",
+      "assignee": "rajan.t@idexcel.com",
+      "component": "Collateral Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-collateral-ui",
+      "name": "LOS Collateral UI",
+      "assignee": "rajan.t@idexcel.com",
+      "component": "Collateral Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-collateral-ui-widget",
+      "name": "LOS Collateral UI Widget",
+      "assignee": "rajan.t@idexcel.com",
+      "component": "Collateral Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-commoncomponents",
+      "name": "LOS Commoncomponents",
+      "assignee": "manasa.b@idexcel.com",
+      "component": "Others",
+      "isChecked": true
+    },
+    {
+      "key": "los-comparison-service",
+      "name": "LOS Comparison Service",
+      "assignee": "anoop.mc@idexcel.com",
+      "component": "Others",
+      "isChecked": true
+    },
+    {
+      "key": "los-core-mimic",
+      "name": "LOS Core Mimic",
+      "assignee": "harshitha.pochiraju@idexcel.com",
+      "component": "Core Banking",
+      "isChecked": true
+    },
+    {
+      "key": "los-coredelivery",
+      "name": "LOS Core Delivery",
+      "assignee": "harshitha.pochiraju@idexcel.com",
+      "component": "Core Banking",
+      "isChecked": true
+    },
+    {
+      "key": "los-covenant",
+      "name": "LOS Covenant",
+      "assignee": "sobhaditya.c@idexcel.com",
+      "component": "Covenant Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-covenant-ui",
+      "name": "LOS Covenant UI",
+      "assignee": "sobhaditya.c@idexcel.com",
+      "component": "Covenant Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-covenant-ui-widget",
+      "name": "LOS Covenant UI Widget",
+      "assignee": "sobhaditya.c@idexcel.com",
+      "component": "Covenant Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-credit-availability",
+      "name": "LOS Credit Availability",
+      "assignee": "aaron.buthelo@idexcel.com",
+      "component": "Credit Availability",
+      "isChecked": true
+    },
+    {
+      "key": "los-credit-memorandum",
+      "name": "LOS Credit Memorandum",
+      "assignee": "raghul.v@idexcel.com",
+      "component": "Others",
+      "isChecked": true
+    },
+    {
+      "key": "los-creditavailability-ui",
+      "name": "LOS Creditavailability UI",
+      "assignee": "aaron.buthelo@idexcel.com",
+      "component": "Credit Availability",
+      "isChecked": true
+    },
+    {
+      "key": "los-creditreporting",
+      "name": "LOS Creditreporting",
+      "assignee": "sagar.k@idexcel.com",
+      "component": "Reports & Dashboard",
+      "isChecked": true
+    },
+    {
+      "key": "los-csportal-ui",
+      "name": "LOS Csportal UI",
+      "assignee": "abhisekh.b@idexcel.com",
+      "component": "Customer Support Portal",
+      "isChecked": true
+    },
+    {
+      "key": "los-custom-auth",
+      "name": "LOS Custom Auth",
+      "assignee": "harmanpreet.gill@idexcel.com",
+      "component": "Customer Authorizer",
+      "isChecked": true
+    },
+    {
+      "key": "los-custom-ratio",
+      "name": "LOS Custom Ratio",
+      "assignee": "rajasekhar.s@idexcel.com",
+      "component": "Custom Ratio",
+      "isChecked": true
+    },
+    {
+      "key": "los-customer-portal",
+      "name": "LOS Customer Portal",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Customer Portal",
+      "isChecked": true
+    },
+    {
+      "key": "los-customerportal-ui",
+      "name": "LOS Customerportal UI",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Customer Portal",
+      "isChecked": true
+    },
+    {
+      "key": "los-dashboard-ui",
+      "name": "LOS Dashboard UI",
+      "assignee": "sagar.k@idexcel.com",
+      "component": "Reports & Dashboard",
+      "isChecked": true
+    },
+    {
+      "key": "los-dashboard-ui-widget",
+      "name": "LOS Dashboard UI Widget",
+      "assignee": "sagar.k@idexcel.com",
+      "component": "Reports & Dashboard",
+      "isChecked": true
+    },
+    {
+      "key": "los-data-dwhscripts-automated",
+      "name": "LOS Data Dwhscripts Automated",
+      "assignee": "harshitha.pochiraju@idexcel.com",
+      "component": "DB Transaction Log",
+      "isChecked": true
+    },
+    {
+      "key": "los-datastream",
+      "name": "LOS Datastream",
+      "assignee": "harshitha.pochiraju@idexcel.com",
+      "component": "DB Transaction Log",
+      "isChecked": true
+    },
+    {
+      "key": "los-dataversa",
+      "name": "LOS Dataversa",
+      "assignee": "harshitha.pochiraju@idexcel.com",
+      "component": "Others",
+      "isChecked": true
+    },
+    {
+      "key": "los-dbscripts",
+      "name": "LOS Dbscripts",
+      "assignee": "harshitha.pochiraju@idexcel.com",
+      "component": "DB Transaction Log",
+      "isChecked": true
+    },
+    {
+      "key": "los-dig",
+      "name": "LOS Dig",
+      "assignee": "anoop.mc@idexcel.com",
+      "component": "Others",
+      "isChecked": true
+    },
+    {
+      "key": "los-documentprocessing",
+      "name": "LOS Documentprocessing",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "File Manager",
+      "isChecked": true
+    },
+    {
+      "key": "los-docusignint",
+      "name": "LOS Docusignint",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Integrations",
+      "isChecked": true
+    },
+    {
+      "key": "los-exception-ui-widget",
+      "name": "LOS Exception UI Widget",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Exception",
+      "isChecked": true
+    },
+    {
+      "key": "los-exceptions",
+      "name": "LOS Exceptions",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Exception",
+      "isChecked": true
+    },
+    {
+      "key": "los-exceptions-ui",
+      "name": "LOS Exceptions UI",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Exception",
+      "isChecked": true
+    },
+    {
+      "key": "los-exposure",
+      "name": "LOS Exposure",
+      "assignee": "harmanpreet.gill@idexcel.com",
+      "component": "Exposure",
+      "isChecked": true
+    },
+    {
+      "key": "los-exposure-ui",
+      "name": "LOS Exposure UI",
+      "assignee": "harmanpreet.gill@idexcel.com",
+      "component": "Exposure",
+      "isChecked": true
+    },
+    {
+      "key": "los-exposure-ui-widget",
+      "name": "LOS Exposure UI Widget",
+      "assignee": "harmanpreet.gill@idexcel.com",
+      "component": "Exposure",
+      "isChecked": true
+    },
+    {
+      "key": "los-file-manager",
+      "name": "LOS File Manager",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "File Manager",
+      "isChecked": true
+    },
+    {
+      "key": "los-filemanager-ui",
+      "name": "LOS Filemanager UI",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "File Manager",
+      "isChecked": true
+    },
+    {
+      "key": "los-filemanager-ui-widget",
+      "name": "LOS Filemanager UI Widget",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "File Manager",
+      "isChecked": true
+    },
+    {
+      "key": "los-filemapping",
+      "name": "LOS Filemapping",
+      "assignee": "rajasekhar.s@idexcel.com",
+      "component": "File Mapping",
+      "isChecked": true
+    },
+    {
+      "key": "los-filemapping-ui",
+      "name": "LOS Filemapping UI",
+      "assignee": "vijay.g@idexcel.com",
+      "component": "File Mapping",
+      "isChecked": true
+    },
+    {
+      "key": "los-finastra",
+      "name": "LOS Finastra",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Integrations",
+      "isChecked": true
+    },
+    {
+      "key": "los-flexiform",
+      "name": "LOS Flexiform",
+      "assignee": "sarath.c@idexcel.com",
+      "component": "Flexi Forms",
+      "isChecked": true
+    },
+    {
+      "key": "los-flexiform-ui-widget",
+      "name": "LOS Flexiform UI Widget",
+      "assignee": "sarath.c@idexcel.com",
+      "component": "Flexi Forms",
+      "isChecked": true
+    },
+    {
+      "key": "los-formsmanager-ui-widget",
+      "name": "LOS Formsmanager UI Widget",
+      "assignee": "raghul.v@idexcel.com",
+      "component": "Forms Manager",
+      "isChecked": true
+    },
+    {
+      "key": "los-int-auth",
+      "name": "LOS Int Auth",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Auth Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-integration-ui-widget",
+      "name": "LOS Integration UI Widget",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Integrations",
+      "isChecked": true
+    },
+    {
+      "key": "los-intflow",
+      "name": "LOS Intflow",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Integrations",
+      "isChecked": true
+    },
+    {
+      "key": "los-kafka-service",
+      "name": "LOS Kafka Service",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Integrations",
+      "isChecked": true
+    },
+    {
+      "key": "los-lambda-auth",
+      "name": "LOS Lambda Auth",
+      "assignee": "harmanpreet.gill@idexcel.com",
+      "component": "Auth Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-loan-ui",
+      "name": "LOS Loan UI",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Loans Details",
+      "isChecked": true
+    },
+    {
+      "key": "los-loan-ui-widget",
+      "name": "LOS Loan UI Widget",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Loans Details",
+      "isChecked": true
+    },
+    {
+      "key": "los-loanauto",
+      "name": "LOS Loanauto",
+      "assignee": "sarath.c@idexcel.com",
+      "component": "Auto Decision",
+      "isChecked": true
+    },
+    {
+      "key": "los-loanauto-ui",
+      "name": "LOS Loanauto UI",
+      "assignee": "sarath.c@idexcel.com",
+      "component": "Auto Decision",
+      "isChecked": true
+    },
+    {
+      "key": "los-loanauto-ui-widget",
+      "name": "LOS Loanauto UI Widget",
+      "assignee": "sarath.c@idexcel.com",
+      "component": "Auto Decision",
+      "isChecked": true
+    },
+    {
+      "key": "los-loanpipeline-ui",
+      "name": "LOS Loanpipeline UI",
+      "assignee": "saravanan.tavidarajan@idexcel.com",
+      "component": "Loan Pipeline",
+      "isChecked": true
+    },
+    {
+      "key": "los-loans",
+      "name": "LOS Loans",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Loan Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-loans-ui",
+      "name": "LOS Loans UI",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Loan Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-monthly-db-logs",
+      "name": "LOS Monthly DB Logs",
+      "assignee": "harshitha.pochiraju@idexcel.com",
+      "component": "DB Transaction Log",
+      "isChecked": true
+    },
+    {
+      "key": "los-notifications",
+      "name": "LOS Notifications",
+      "assignee": "bhanu.prakash@idexcel.com",
+      "component": "Notifications",
+      "isChecked": true
+    },
+    {
+      "key": "los-relationship-ui-widget",
+      "name": "LOS Relationship UI Widget",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Relationships",
+      "isChecked": true
+    },
+    {
+      "key": "los-relationships",
+      "name": "LOS Relationships",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Relationships",
+      "isChecked": true
+    },
+    {
+      "key": "los-relationships-ui",
+      "name": "LOS Relationships UI",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Relationships",
+      "isChecked": true
+    },
+    {
+      "key": "los-replication-slotcheck",
+      "name": "LOS Replication Slotcheck",
+      "assignee": "harshitha.pochiraju@idexcel.com",
+      "component": "DB Transaction Log",
+      "isChecked": true
+    },
+    {
+      "key": "los-reporting",
+      "name": "LOS Reporting",
+      "assignee": "harshitha.pochiraju@idexcel.com",
+      "component": "Reports & Dashboard",
+      "isChecked": true
+    },
+    {
+      "key": "los-riskrating",
+      "name": "LOS Riskrating",
+      "assignee": "srivani.v@idexcel.com",
+      "component": "Risk Rating",
+      "isChecked": true
+    },
+    {
+      "key": "los-riskrating-ui",
+      "name": "LOS Riskrating UI",
+      "assignee": "srivani.v@idexcel.com",
+      "component": "Risk Rating",
+      "isChecked": true
+    },
+    {
+      "key": "los-riskrating-ui-widget",
+      "name": "LOS Riskrating UI Widget",
+      "assignee": "srivani.v@idexcel.com",
+      "component": "Risk Rating",
+      "isChecked": true
+    },
+    {
+      "key": "los-salesforce",
+      "name": "LOS Salesforce",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Integrations",
+      "isChecked": true
+    },
+    {
+      "key": "los-search",
+      "name": "LOS Search",
+      "assignee": "adarsh.n@idexcel.com",
+      "component": "Enterprise Search",
+      "isChecked": true
+    },
+    {
+      "key": "los-search-ui",
+      "name": "LOS Search UI",
+      "assignee": "adarsh.n@idexcel.com",
+      "component": "Enterprise Search",
+      "isChecked": true
+    },
+    {
+      "key": "los-sensitive-data-service",
+      "name": "LOS Sensitive Data Service",
+      "assignee": "bhavik.bhoir@idexcel.com",
+      "component": "Sensitive Data Service",
+      "isChecked": true
+    },
+    {
+      "key": "los-serverless-spreading",
+      "name": "LOS Serverless Spreading",
+      "assignee": "puneeth.s@idexcel.com",
+      "component": "Spreading",
+      "isChecked": true
+    },
+    {
+      "key": "los-softdeletehandler",
+      "name": "LOS Softdeletehandler",
+      "assignee": "anoop.mc@idexcel.com",
+      "component": "Others",
+      "isChecked": true
+    },
+    {
+      "key": "los-spreading",
+      "name": "LOS Spreading",
+      "assignee": "rajasekhar.s@idexcel.com",
+      "component": "Spreading",
+      "isChecked": true
+    },
+    {
+      "key": "los-spreading-ui",
+      "name": "LOS Spreading UI",
+      "assignee": "rangaraj.s@idexcel.com",
+      "component": "Spreading",
+      "isChecked": true
+    },
+    {
+      "key": "los-spreading-ui-widget",
+      "name": "LOS Spreading UI Widget",
+      "assignee": "rangaraj.s@idexcel.com",
+      "component": "Spreading",
+      "isChecked": true
+    },
+    {
+      "key": "los-tableau-automation",
+      "name": "LOS Tableau Automation",
+      "assignee": "sagar.k@idexcel.com",
+      "component": "Reports & Dashboard",
+      "isChecked": true
+    },
+    {
+      "key": "los-utility",
+      "name": "LOS Utility",
+      "assignee": "anoop.mc@idexcel.com",
+      "component": "Others",
+      "isChecked": true
+    }
+  ]
+}

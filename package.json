@@ -1,0 +1,33 @@
+{
+  "name": "cync-los-sonarqube-to-jira-integration",
+  "version": "1.0.0",
+  "description": "Integration service for creating Jira tickets from SonarQube issues",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --recursive \"test/**/*.test.js\"",
+    "coverage": "nyc mocha --recursive \"test/**/*.test.js\"",
+    "build": "npm install && webpack --mode=development --env noWatch",
+    "build-prod": "npm install && webpack --mode=production",
+    "start": "node build/index/index.js",
+    "watch": "webpack --mode=development"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "dotenv": "^16.5.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "mocha": "^11.4.0",
+    "nock": "^14.0.4",
+    "nyc": "^17.1.0",
+    "sinon": "^20.0.0",
+    "webpack": "5.88.1",
+    "webpack-cli": "^4.2.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,105 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Sonar to Jira ticket creation service
+Parameters:
+  SonarJiraIntegrationSecretName:
+    Type: String
+    Default: Los-ShardRes-Jira-Scrt
+    Description: Enter the name of Sonar Jira Integration Secret Name
+  EnvironmentType:
+    Type: String
+    Default: production
+    Description: Enter environment type according to need.
+Resources:
+  ProjectFetcherFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: ProjectFetcherFunction
+      CodeUri: ./
+      Handler: src/functions/project_fetcher.projectFetcherHandler
+      Runtime: nodejs20.x
+      MemorySize: 1024
+      Timeout: 420
+      Environment:
+        Variables:
+          SonarJiraSecretName: !Ref SonarJiraIntegrationSecretName
+          Environment: !Ref EnvironmentType
+      Policies:
+        - Statement:
+            - Effect: Allow
+              Action: 
+                - 'secretsmanager:GetSecretValue'
+              Resource: !Sub 'arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:${SonarJiraIntegrationSecretName}*'
+  SonarToJiraFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: SonarToJiraHandler
+      CodeUri: ./
+      Handler: src/index.sonarToJiraHandler
+      Runtime: nodejs20.x
+      MemorySize: 1024
+      Timeout: 420
+      Environment:
+        Variables:
+          PROJECT_FETCHER_FUNCTION: !Ref ProjectFetcherFunction
+          SonarJiraSecretName: !Ref SonarJiraIntegrationSecretName
+          Environment: !Ref EnvironmentType          
+      Policies:
+        - Statement:
+            - Effect: Allow
+              Action: 'lambda:InvokeFunction'
+              Resource: !GetAtt ProjectFetcherFunction.Arn
+            - Effect: Allow
+              Action: 
+                - 'secretsmanager:GetSecretValue'
+              Resource: !Sub 'arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:${SonarJiraIntegrationSecretName}*'
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /sonar-to-jira
+            Method: POST
+        Schedule:
+          Type: Schedule
+          Properties:
+            Schedule: cron(30 1 * * ? *)  # Run daily at 7:00 AM IST (1:30 AM UTC)
+            Description: "Daily job to create Jira tickets from SonarQube issues"
+            Enabled: true
+  TicketCloserFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: TicketCloserFunction
+      CodeUri: ./
+      Handler: src/functions/ticket_closer.ticketCloserHandler
+      Runtime: nodejs20.x
+      MemorySize: 1024
+      Timeout: 420
+      Environment:
+        Variables:
+          SonarJiraSecretName: !Ref SonarJiraIntegrationSecretName
+          Environment: !Ref EnvironmentType
+      Policies:
+        - Statement:
+            - Effect: Allow
+              Action: 
+                - 'secretsmanager:GetSecretValue'
+              Resource: !Sub 'arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:${SonarJiraIntegrationSecretName}*'
+      Events:
+        Schedule:
+          Type: Schedule
+          Properties:
+            Schedule: cron(0 0 1,15 * ? *)  # Run on 1st and 15th of each month
+            Description: "Bi-monthly job to close resolved SonarQube issues in Jira"
+            Enabled: true
+        Api:
+          Type: Api
+          Properties:
+            Path: /close-resolved-tickets
+            Method: POST
+Outputs:
+  SonarToJiraApi:
+    Description: "API Gateway endpoint URL for Sonar to Jira integration"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/sonar-to-jira"
+  SonarToJiraFunction:
+    Description: "Lambda Function ARN"
+    Value: !GetAtt SonarToJiraFunction.Arn
